@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".parametrosControl">
+
+    <Button
+        android:id="@+id/btnTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:onClick="mostrarTemperatura"
+        android:text="Temperatura" />
+
+    <Button
+        android:id="@+id/btnRecorr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="mostrarRecorrido"
+        android:text="Recorrido" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Salir"
+        android:text="SALIR" />
+</LinearLayout>
