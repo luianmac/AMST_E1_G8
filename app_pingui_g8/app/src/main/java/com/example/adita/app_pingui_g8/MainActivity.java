@@ -30,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mQueue= Volley.newRequestQueue(this);
     }
+
+    /**
+     * Método que captura los datos ingresados por la persona en la interfaz
+     * gráfica y llama a la función iniciarSesión para validar dichos datos
+     * @param v para reconocer que el método es para ser usado por los botones
+     *          método 'OnClick'
+     */
     public void login(View v){
         final EditText dt1=(EditText) findViewById(R.id.txtuser);
         final EditText dt2=(EditText) findViewById(R.id.txtpassword);
@@ -38,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
         iniciarSesion(usuario,contrasena);
 
     }
+
+    /**
+     * Método que se encarga de validar el usuario y las contraseñas
+     * ingresadas para logonearse al menú de la APP y enviar el token a la
+     * siguiente actividad
+     * @param usuario es una cadena de texto con la que se identifica la persona
+     * @param contrasena es una cadena de texto que solo conoce la persona
+     */
 
     private void iniciarSesion(String usuario, String contrasena) {
         Map<String, String> params=new HashMap<>();

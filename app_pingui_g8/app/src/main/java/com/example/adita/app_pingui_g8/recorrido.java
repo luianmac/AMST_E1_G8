@@ -24,6 +24,12 @@ public class recorrido extends AppCompatActivity {
 
     private RequestQueue mQueue;
     private String token = "";
+
+    /**
+     * Método que permite la ejecución de la Activity y captura el token de
+     * la anterior actividad
+     * @param savedInstanceState guarda el estado de la instancia
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +53,12 @@ public class recorrido extends AppCompatActivity {
         }
     }
 
+    /**
+     * Método que establece conexión con la base de datos y obtiene los datos detallados
+     * en formato JSON
+     * @param url link de la base da datos a establecer conexióm
+     * @param a cuadro de texto de la interfaz en donde se van a escribir los datos obtenidos
+     */
     private void revisarRecorrido(String url, final TextView a) {
         //final TextView tv = (TextView) findViewById(R.id.txtRecorrido);
         //String url_Recorrido = "https://amstdb.herokuapp.com/db/recorrido";

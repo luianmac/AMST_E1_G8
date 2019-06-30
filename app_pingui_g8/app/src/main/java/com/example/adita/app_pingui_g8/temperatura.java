@@ -21,6 +21,12 @@ import java.util.Map;
 public class temperatura extends AppCompatActivity {
     private RequestQueue mQueue;
     private String token = "";
+
+    /**
+     * Método que permite la ejecución de la Activity y captura el token de
+     * la anterior actividad
+     * @param savedInstanceState guarda el estado de la instancia
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +37,10 @@ public class temperatura extends AppCompatActivity {
         revisarTemperatura();
     }
 
+    /**
+     * Método que captura el valor temperatura almacenado en la base de datos
+     * y los muetra en el cuadro de texto de la interfaz gráfica
+     */
     private void revisarTemperatura() {
         final TextView tv = (TextView) findViewById(R.id.txtTemperatura);
         String url_Temp = "https://amstdb.herokuapp.com/db/registroDeFrios/20";
