@@ -7,6 +7,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- Control EditText
+        Campo de texto en donde el usuario puede editar su contenido
+        Campo de texto para indicar el usuario
+        identificador 'txtuser'-->
     <EditText
         android:id="@+id/txtuser"
         android:layout_width="match_parent"
@@ -15,6 +19,10 @@
         android:hint="usuario"
         android:inputType="textPersonName" />
 
+    <!-- Control EditText
+        Campo de texto en donde el usuario puede editar su contenido
+        Campo de texto para indicar la contraseña
+        identificador txtpassword-->
     <EditText
         android:id="@+id/txtpassword"
         android:layout_width="match_parent"
@@ -23,6 +31,10 @@
         android:hint="contraseña"
         android:inputType="textPassword" />
 
+    <!-- Control Button
+        Boton que permite capturar el evento descrito en el código Java
+        para poder logoneare al menu del aplicativo
+        identificador btnlogin-->
     <Button
         android:id="@+id/btnlogin"
         android:layout_width="match_parent"
